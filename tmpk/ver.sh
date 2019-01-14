@@ -2,7 +2,7 @@
 
 # this section will change as apps are updated
 # modify the output of 'git status' to format below 
-cp ../BroWeb/arm64_SystemWebView.apk .
+#cp ../BroWeb/arm64_SystemWebView.apk .
 cp ../GmsCore/GmsCore.apk .
 cp ../Phonesky/Phonesky.apk .
 
