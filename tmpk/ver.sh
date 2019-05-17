@@ -6,9 +6,6 @@ cp ../BroWeb/arm64_SystemWebView.apk .
 cp ../GmsCore/GmsCore.apk .
 cp ../Phonesky/Phonesky.apk .
 cp ../FDroid/FDroid.apk .
-cp ../FDroidPrivileged/FDroidPrivileged.apk .
-cp ../GmsCore/GmsCore.apk .
-cp ../OpenWeatherMapProvider/OpenWeatherMapProvider.apk .
 
 for i in *.apk; do
     unzip "${i}" 'AndroidManifest.xml' -d "${i%%.apk}"                                     #partial unzip for androidmanifest
