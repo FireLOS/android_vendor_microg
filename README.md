@@ -32,18 +32,39 @@ You can build it yourself but,
 ### Can't you just flash a NanoDroid package?
   Installation by flashing an [official package](https://downloads.nanolx.org/NanoDroid/Stable/) would be preferred, but I was unable to succeed with this method while on Pie. I can't attribute my failure here to user error, as NanoDroid worked flawlessly on pre-Pie roms. After trying several combinations of [deodexing](https://gitlab.com/Nanolx/NanoDroid/blob/master/doc/DeodexServices.md) and running patcher on non-spoofing-enabled rom, not deodexing or running patcher on spoofing-enabled rom, running patcher in TWRP/magisk-mode, etc. I decided to have my desired components installed at build-time.
 
-## Signature-spoofing in Pie
+## Signature-spoofing 
   Roms without built-in support for signature-spoofing can be built from source and patched to include it by applying an OS-specific patch from [here](https://github.com/microg/android_packages_apps_GmsCore/tree/master/patches).
 
 ### Patching Procedure
   cd to frameworks/base within your build directory.
 
   download and apply patch
+  
+  For android 9
 ```
-wget https://github.com/stephrost/android_vendor_microg/raw/master/android_frameworks_base-P.patch
+wget https://raw.githubusercontent.com/microg/android_packages_apps_GmsCore/master/patches/android_frameworks_base-P.patch
 patch -p1 < android_frameworks_base-P.patch
 ```
+
 `git clean -f` to clean frameworks/base of ".orig" files with 
+
+For android 8
+```
+wget https://raw.githubusercontent.com/microg/android_packages_apps_GmsCore/master/patches/android_frameworks_base-O.patch
+patch -p1 < android_frameworks_base-O.patch
+```
+
+`git clean -f` to clean frameworks/base of ".orig" files with 
+
+For android 7
+```
+wget https://raw.githubusercontent.com/microg/android_packages_apps_GmsCore/master/patches/android_frameworks_base-N.patch
+patch -p1 < android_frameworks_base-N.patch
+```
+
+`git clean -f` to clean frameworks/base of ".orig" files with 
+
+
 
 ## Incorporate this project into build
 in .repo/local_manifests/roomservice.xml, add
