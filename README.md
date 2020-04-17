@@ -48,8 +48,7 @@ patch -p1 < android_frameworks_base-P.patch
 ## Incorporate this project into build
 in .repo/local_manifests/roomservice.xml, add
  ```
- <remote name="stephrost" fetch="https://github.com/stephrost/" />
-  <project name="android_vendor_microg" path="vendor/microg" remote="stephrost" revision="master" />
+  <project name="ANDROID2468/android_vendor_microg" path="vendor/microg" remote="github" revision="master" />
  ```
 
-add `$(call inherit-product, vendor/microg/microg.mk)` to device/google/muskie/aosp_walleye.mk
+add `$(call inherit-product-if-exists, vendor/microg/microg.mk)` to  ex: device/google/muskie/aosp_walleye.mk
