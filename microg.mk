@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
     GoogleContactsSync \
     GsfProxy \
     OpenWeatherMapProvider \
-    Phonesky \
     com.google.android.maps \
-    nlpBackendIchnaea \
+    UnifiedNlp \
     nlpBackendNominatim
