@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     AuroraStore \
+    FakeStore \
     Bromite \
     BroWeb \
     DroidGuard \
