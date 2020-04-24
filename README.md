@@ -10,14 +10,15 @@ This project facilitates the inclusion of the following apps/etc during build-ti
  * [F-Droid](https://f-droid.org) playstore-like client to install FOSS software.
    * [NanoDroid's F-Droid repo](https://nanolx.org/fdroid/repo/) pre-installed for easy updating.
    * [F-Droid Privileged Extension](https://gitlab.com/fdroid/privileged-extension/) eases installation/removal of apps.
- * [Play Store](https://gitlab.com/Nanolx/NanoDroid/blob/master/doc/Phonesky.diff) NanoDroid-mod.
+ * [FakeStore](https://github.com/microg/android_packages_apps_FakeStore)
  * [Weather providers](https://download.lineageos.org/extras)
    * OpenWeatherMapWeatherProvider
    * WundergroundWeatherProvider
    * YahooWeatherProvider
  * [google sync adapters](https://gitlab.com/Nanolx/NanoDroid)
  * [swipe libs](http://opengapps.org/) for swipe capability in aosp keyboard
- 
+ * [AuroraStore](https://gitlab.com/AuroraOSS/AuroraStore)
+ * [AuroraServices](https://gitlab.com/AuroraOSS/AuroraServices)
 __*Please see links above for sources and additional information on the components included within this project.__
 
 ### Why is this necessary?

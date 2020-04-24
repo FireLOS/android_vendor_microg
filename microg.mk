@@ -19,14 +19,17 @@ LOCAL_PATH := vendor/microg
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib64/libjni_keyboarddecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_keyboarddecoder.so \
+    $(LOCAL_PATH)/etc/default-permissions/AuroraStore.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/AuroraStore.xml \
     $(LOCAL_PATH)/lib64/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_latinimegoogle.so \
     $(LOCAL_PATH)/etc/permissions/features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/features.xml \
     $(LOCAL_PATH)/etc/default-permissions/microg-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/microg-permissions.xml \
-    $(LOCAL_PATH)/etc/default-permissions/phonesky-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/phonesky-permissions.xml \
+    $(LOCAL_PATH)/etc/default-permissions/FakeStore-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/FakeStore-permissions.xml \
     $(LOCAL_PATH)/etc/sysconfig/microg-a5k.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/microg-a5k.xml
 
 PRODUCT_PACKAGES += \
-    Phonesky \
+    AuroraStore \
+    AuroraServices \
+    FakeStore \
     Bromite \
     BroWeb \
     DroidGuard \
