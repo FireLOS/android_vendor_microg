@@ -19,7 +19,7 @@ This project facilitates the inclusion of the following apps/etc during build-ti
  * [swipe libs](http://opengapps.org/) for swipe capability in aosp keyboard
  * [AuroraStore](https://gitlab.com/AuroraOSS/AuroraStore)
  * [AuroraServices](https://gitlab.com/AuroraOSS/AuroraServices)
- 
+
 __*Please see links above for sources and additional information on the components included within this project.__
 
 ### Why is this necessary?
@@ -71,7 +71,7 @@ patch -p1 < android_frameworks_base-N.patch
 ## Incorporate this project into build
 in .repo/local_manifests/roomservice.xml, add
  ```
-  <project name="ANDROID2468/android_vendor_microg" path="vendor/microg" remote="github" revision="master" />
+  <project name="ANDROID2468/android_vendor_microg" path="vendor/microg" remote="github" revision="nonPlayStore" />
  ```
 
 add `$(call inherit-product-if-exists, vendor/microg/microg.mk)` to  ex: device/google/muskie/aosp_walleye.mk
