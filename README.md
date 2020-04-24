@@ -19,6 +19,7 @@ This project facilitates the inclusion of the following apps/etc during build-ti
  * [swipe libs](http://opengapps.org/) for swipe capability in aosp keyboard
  * [AuroraStore](https://gitlab.com/AuroraOSS/AuroraStore)
  * [AuroraServices](https://gitlab.com/AuroraOSS/AuroraServices)
+ 
 __*Please see links above for sources and additional information on the components included within this project.__
 
 ### Why is this necessary?
