@@ -26,9 +26,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/sysconfig/microg-a5k.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/microg-a5k.xml
 
 PRODUCT_PACKAGES += \
-    Phonesky \
-    Bromite \
-    BroWeb \
+    FakeStore \
+    AuroraStore \
     DroidGuard \
     FDroid \
     FDroidPrivileged \
