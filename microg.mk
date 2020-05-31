@@ -18,8 +18,7 @@
 LOCAL_PATH := vendor/microg
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/lib64/libjni_keyboarddecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_keyboarddecoder.so \
-    $(LOCAL_PATH)/lib64/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_latinimegoogle.so \
+    $(LOCAL_PATH)/lib/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_latinimegoogle.so \
     $(LOCAL_PATH)/etc/permissions/features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/features.xml \
     $(LOCAL_PATH)/etc/default-permissions/microg-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/microg-permissions.xml \
     $(LOCAL_PATH)/etc/default-permissions/phonesky-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/phonesky-permissions.xml \
@@ -29,6 +28,7 @@ PRODUCT_PACKAGES += \
     FakeStore \
     AuroraStore \
     DroidGuard \
+    YouTubeVanced \
     FDroid \
     FDroidPrivileged \
     GmsCore \
