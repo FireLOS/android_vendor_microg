@@ -1,4 +1,4 @@
-# android_vendor_microg for FireLineage 
+# Microg vendor for FireLineage 
 
 This project facilitates the inclusion of the following apps/etc during build-time.
  * [microG](https://microg.org) packages
