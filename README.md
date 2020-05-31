@@ -1,4 +1,4 @@
-# android_vendor_microg
+# android_vendor_microg for FireLineage 
 
 This project facilitates the inclusion of the following apps/etc during build-time.
  * [microG](https://microg.org) packages
@@ -10,13 +10,13 @@ This project facilitates the inclusion of the following apps/etc during build-ti
  * [F-Droid](https://f-droid.org) playstore-like client to install FOSS software.
    * [NanoDroid's F-Droid repo](https://nanolx.org/fdroid/repo/) pre-installed for easy updating.
    * [F-Droid Privileged Extension](https://gitlab.com/fdroid/privileged-extension/) eases installation/removal of apps.
- * [Play Store](https://gitlab.com/Nanolx/NanoDroid/blob/master/doc/Phonesky.diff) NanoDroid-mod.
+ * [FakeStore](https://github.com/microg/android_packages_apps_FakeStore) An empty package that mocks the existence of the Google Play Store to the Play Services client.
  * [Weather providers](https://download.lineageos.org/extras)
    * OpenWeatherMapWeatherProvider
    * WundergroundWeatherProvider
    * YahooWeatherProvider
  * [google sync adapters](https://gitlab.com/Nanolx/NanoDroid)
- * [swipe libs](http://opengapps.org/) for swipe capability in aosp keyboard
+ * [swipe libs](http://opengapps.org/) for swipe capability in aosp keyboard. arm32 version 
  
 __*Please see links above for sources and additional information on the components included within this project.__
 
@@ -69,7 +69,7 @@ patch -p1 < android_frameworks_base-N.patch
 ## Incorporate this project into build
 in .repo/local_manifests/roomservice.xml, add
  ```
-  <project name="ANDROID2468/android_vendor_microg" path="vendor/microg" remote="github" revision="master" />
+  <project name="FireLOS/android_vendor_microg" path="vendor/microg" remote="github" revision="master" />
  ```
 
 add `$(call inherit-product-if-exists, vendor/microg/microg.mk)` to  ex: device/google/muskie/aosp_walleye.mk
